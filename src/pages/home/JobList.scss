@@ -1,0 +1,208 @@
+$primary-color: #6dc77a;
+$shadow-color: rgba(53, 64, 78, 0.2);
+
+body {}
+
+.shadow {
+  box-shadow: 0 0 3px $shadow-color;
+}
+
+.rounded {
+  border-radius: 5px;
+}
+
+.bg-light {
+  background-color: #f7f8fa;
+}
+
+// Primary Color
+.bg-primary,
+.btn-primary,
+.btn-outline-primary {
+  background-color: $primary-color;
+}
+
+.btn-primary,
+.btn-outline-primary {
+  border-color: $primary-color;
+  color: #fff;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active,
+.btn-outline-primary.active,
+.btn-outline-primary.focus,
+.btn-outline-primary:not(:disabled):not(.disabled):active {
+  box-shadow: 0 3px 7px rgba(109, 199, 122, 0.5);
+}
+
+.badge-primary {
+  background-color: $primary-color;
+}
+
+.nav-pills .nav-link.active,
+.pagination .active a,
+.custom-control-input:checked~.custom-control-label:before,
+.social-icon li a:hover,
+.flatpickr-day.selected,
+.flatpickr-day.selected:hover,
+.tns-nav button.tns-nav-active,
+.form-check-input.form-check-input:checked {
+  background-color: $primary-color;
+}
+
+.btn {
+  padding: 8px 20px;
+  outline: none;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.custom-modal {
+  position: absolute;
+  top: 94px;
+  right: 132px;
+  width: 500px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.custom-modal .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.custom-modal .modal-header .modal-title {
+  margin: 0;
+}
+
+.custom-modal .modal-header .btn-close {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #777;
+}
+
+.custom-modal .modal-body {
+  padding: 10px;
+}
+
+.overflow-ellipsis {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* Number of lines to show */
+  -webkit-line-clamp: 5;
+  line-height: 1.5em;
+  /* Adjust as needed */
+}
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #333;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal Header */
+.modal-header {
+  border-bottom: none;
+  padding: 20px;
+}
+
+/* Modal Title */
+.modal-title {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+/* Modal Body */
+.modal-body {
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+  padding: 20px;
+}
+
+/* Modal Footer */
+.modal-footer {
+  border-top: none;
+  padding: 20px;
+}
+
+.btn-apply:hover {
+  background-color: #0056b3;
+}
+
+/* Job Details Section */
+.job-details {
+  margin-top: 10px;
+}
+
+/* Experience and CTC Section */
+.experience-ctc {
+  margin-top: 20px;
+}
+
+.experience-ctc p {
+  margin-bottom: 10px;
+}
+
+.experience-ctc p span {
+  font-weight: bold;
+}
+
+/* Logo */
+.company-logo {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
